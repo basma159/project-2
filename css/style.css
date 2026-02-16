@@ -175,13 +175,13 @@ header ul li {
     margin-left: -100px;
     margin-top: 10px;
     width: 320px;
-    height: 200px;
+    height: 240px;
     border-radius: 20px;
     padding: 15px;
     display: flex;
     transform: scale(0);
     position: absolute;
-    background-color: rgb(106, 206, 151);
+    background-color: rgb(161, 218, 187);
     gap: 10px;
     transition: 1s;
     z-index: 2;
@@ -196,7 +196,7 @@ header ul li {
 }
 
 .dropdown ul li a:hover {
-    color: #59AC77;
+    color: goldenrod;
 
 }
 
@@ -317,12 +317,19 @@ main {
 
 h1 {
     font-family: 'clicker-script';
+    font-size: 50px;
+    width: 700px;
     font-weight: 400;
     font-style: normal;
     color: black;
+    margin-left: 100px;
+    margin-top: -100px;
 
 }
-
+.h21{
+    font-size: 30px;
+    color: goldenrod;
+}
 .fs {
     position: absolute;
     width: 450px;
@@ -514,7 +521,7 @@ h1 {
 
 .card {
     position: relative;
-    width: 250px;
+    width: 300px;
     height: 480px;
     perspective: 1000px;
     display: flex;
@@ -558,7 +565,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     margin-top: 270px;
-    margin-left: -10px;
+    margin-left: 15px;
     transition: 1s ease;
     transform: translatex(30%);
     gap: 10px;
