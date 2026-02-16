@@ -3,9 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family:'jost' ;
+    src: url('../fonts/Jost/Jost-VariableFont_wght.ttf');
+}
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'jost';
     perspective: 600px;
 }
 
@@ -84,15 +87,18 @@ header {
     gap: 20px;
 
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
+
 .logo span {
     color: #28a054;
     margin-left: -25px;
     font-size: 25px
 }
+
 header a {
     color: black;
 }
@@ -173,13 +179,14 @@ header ul li {
     gap: 10px;
     transition: 1s;
     z-index: 2;
+    color: white;
 
 }
 
 .dropdown ul li {
     display: block;
     margin: 8px 0;
-
+    color: white;
 }
 
 .dropdown ul li a:hover {
@@ -286,7 +293,8 @@ main {
     height: 90vh;
     margin-bottom: 30px;
 }
-.main-bk{
+
+.main-bk {
     /* position: absolute; */
     width: 100%;
     min-height: 100%;
@@ -295,8 +303,12 @@ main {
     background-size: cover;
     background-position: center;
 }
+@font-face {
+    font-family: 'clicker-script';
+    src: url('../fonts/ClickerScript-Regular.ttf');
+}
 h1 {
-    font-family: "Great Vibes", cursive;
+    font-family:'clicker-script' ;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -343,8 +355,9 @@ h1 {
     height: 70vh;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 50px;
+    gap: 20px;
+    margin: 100px 0;
+    /* background-color:#90e0ae; */
 }
 
 .h23 {
@@ -354,6 +367,8 @@ h1 {
 .container1 {
     height: 400px;
     overflow: hidden;
+    border-radius: 50px;
+    border: solid 3px #90e0ae;
 }
 
 .img1 {
@@ -379,14 +394,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
-
 }
 
 .overlay1 a {
     color: rgb(207, 131, 32);
     opacity: 0;
     transform: translateY(40px);
-    transition: 0.5s linear;
+    transition: 0.9s linear;
 }
 
 .overlay1 a::after {
@@ -409,7 +423,7 @@ h1 {
 
 .container1:hover .overlay1 a {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-18px);
 }
 
 /* ---------------------------section2-------------------- */
@@ -511,12 +525,15 @@ h1 {
 .back img {
     width: 100%;
     height: 90%;
+     border: solid 2px darkgoldenrod;
+    border-radius: 30px;
+
 }
 
 .back {
     transform: rotateY(180deg);
     opacity: 0;
-    transition: transform 1s ease;
+    transition: 1s ease;
     backface-visibility: hidden;
 }
 
@@ -577,6 +594,7 @@ h1 {
 }
 
 .arrow:hover a {
+    color: goldenrod;
     opacity: 1;
 }
 
@@ -722,6 +740,12 @@ h1 {
     z-index: 2;
 }
 
+.front5 img,
+.overlay img {
+    border: solid 2px darkgoldenrod;
+    border-radius: 30px;
+}
+
 .overlay img {
     width: 100%;
     height: 110%;
@@ -827,7 +851,6 @@ h1 {
     display: flex;
     /* flex-direction: row; */
     justify-content: space-evenly;
-
 }
 
 .card6 {
@@ -836,12 +859,15 @@ h1 {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+
 }
 
 .img6 {
     width: 300px;
     height: 300px;
     overflow: hidden;
+    border-radius: 50px 0 50px 0;
+    border: solid 3px rgb(18, 114, 69);
 }
 
 .img6 img {
@@ -905,11 +931,14 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .icon17 {
     color: black;
     opacity: 0.5;
+    transform: translateY(0);
+    transition: 0.5s;
 }
 
 .icon27 {
@@ -917,19 +946,17 @@ h1 {
     position: absolute;
     opacity: 0;
     transform: translateY(150%);
+    transition: 0.5s;
 }
 
 .icon7:hover .icon17 {
     transform: translateY(-300%);
-    transition: 0.5s;
-
 }
 
 .icon7:hover .icon27 {
     opacity: 1;
     transform: translateY(0);
     transition: 0.5s;
-
 }
 
 .h57 {
@@ -940,8 +967,8 @@ h1 {
 /* ----------------------------section7--------------------- */
 footer {
     width: 100%;
-    height: 90vh;
-    background-color:#90e0ae;
+    height: 95vh;
+    background-color: #79bd93;
 }
 
 .top-footer {
@@ -977,6 +1004,10 @@ footer {
 
 }
 
+.input8 input:focus-within {
+    border: solid 2px goldenrod;
+}
+
 .btn8 {
     color: white;
     font-size: 20px;
@@ -1006,9 +1037,13 @@ footer {
     gap: 20px;
 }
 
+.icon8 i {
+    transition: 1s;
+}
+
 .icon8 i:hover {
     color: white;
-    transform: scale(1.2);
+    transform: scale(0.6);
 }
 
 .middle-footer {
@@ -1019,6 +1054,7 @@ footer {
     color: white;
     gap: 90px;
 }
+
 .logo8 {
     display: flex;
     flex-direction: row;
@@ -1026,11 +1062,13 @@ footer {
     align-items: center;
     margin-top: -180px;
 }
-.logo8 span{
+
+.logo8 span {
     font-size: 25px;
     font-weight: bold;
     margin-left: -20px;
 }
+
 .middle-footer h6,
 .top-footer h6 {
     font-size: 25px;
