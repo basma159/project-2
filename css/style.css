@@ -301,13 +301,14 @@ main {
 }
 
 .main-bk {
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
     min-height: 100%;
     background: url(../images/19.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 @font-face {
@@ -323,7 +324,7 @@ h1 {
     font-style: normal;
     color: black;
     margin-left: 100px;
-    margin-top: -100px;
+    margin-top: -150px;
 
 }
 .h21{
