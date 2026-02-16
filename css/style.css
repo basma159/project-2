@@ -91,7 +91,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
-
 }
 
 .logo {
@@ -186,7 +185,6 @@ header ul li {
     transition: 1s;
     z-index: 2;
     color: white;
-
 }
 
 .dropdown ul li {
@@ -319,38 +317,40 @@ main {
 h1 {
     font-family: 'clicker-script';
     font-size: 50px;
-    width: 700px;
     font-weight: 400;
     font-style: normal;
     color: black;
-    margin-left: 100px;
-    margin-top: -150px;
-
 }
 .h21{
     font-size: 30px;
     color: goldenrod;
 }
+.p1{
+    font-size: 25px;
+    color: white;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
 .fs {
     position: absolute;
-    width: 450px;
+    width: 750px;
     height: 87vh;
-    margin-left: 200px;
+    margin-left: 100px;
+    margin-top: -40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
     color: white;
-    margin-top: 40px;
 }
 
 .btn1 {
     border: 0;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: rgb(218, 173, 61);
-    font-size: 18px;
+    font-size: 23px;
     transition: .5s;
+    border-radius: 20px;
 }
 
 .btn1 a {
@@ -547,14 +547,14 @@ h1 {
 }
 
 .back {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
     opacity: 0;
     transition: 1s ease;
     backface-visibility: hidden;
 }
 
 .card:hover .back {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
     opacity: 1;
     transition: 1s ease;
 }
@@ -988,7 +988,7 @@ h1 {
 footer {
     width: 100%;
     height: 95vh;
-    background-color: #79bd93;
+    background-color: rgba(120, 218, 164, 0.747);
 }
 
 .top-footer {
